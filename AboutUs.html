@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: #F5F5DC;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section {
+  padding: 50px;
+  text-align: center;
+  background-color: #474e5d;
+  color: white;
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="about-section">
+  <h1 style="font-family: Valorant;">About Us</h1>
+  <p>This page allows players to enter their Valorant account details and receive detailed statistics about their performance in the game. We gather data from every match played, including kills, deaths, assists</p>
+  <p>Our website also provides information about the agents in Valorant. We provide detailed information about each agent's abilities, strengths, and weaknesses. This information is crucial for players who want to maximize their performance in the game and develop effective strategies. Whether you're a seasoned pro or just starting, our agent information can help you master the game and outsmart your opponents.</p>
+</div>
+
+<h2 style="text-align:center">Our Team</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="Default.jpg" alt="Jane" style="width:100%">
+      <div class="container">
+        <h2>Rahul M S</h2>
+        <p class="title">RVCE22MCA098</p>
+        <p>rahulms.mca22@rvce.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="Default.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Yogesh Sharma</h2>
+        <p class="title">RVCE22MCA</p>
+        <p>yogesh@rvce.edu.in</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
